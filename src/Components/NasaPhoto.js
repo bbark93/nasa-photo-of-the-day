@@ -1,14 +1,18 @@
 import React from "react";
+// import styled from 'styled-components'
+import { WrapperDiv, H3font } from "./Fonts";
 
 const NasaPhoto = (props) => {
     return (
-        <div className="nasa-photo-wrapper">
-            <h3>{props.photo.title}</h3>
+        <WrapperDiv>
+            <H3font>{props.photo.title}</H3font>
             <p>{props.photo.date}</p>
             <img src={props.photo.hdurl} />
             <p className="explanation">{props.photo.explanation}</p>
-        </div>
+        </WrapperDiv>
     )
-}
+} 
 
 export default NasaPhoto;
+
+// div className="nasa-photo-wrapper"
